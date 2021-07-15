@@ -20,6 +20,10 @@ API page: https://api.mail.tm/
 
 `API.token.getToken(account, email).token.toString()`
 
-### **Get messages**
+### **Get message id**
 
-`API.message.getMessages(token,1)`
+`API.messages.getMessages(token,1).hydraMember?.get(0)?.id`
+
+### **Get text message**
+
+`API.messageId.getMessage(messageId,token).text`

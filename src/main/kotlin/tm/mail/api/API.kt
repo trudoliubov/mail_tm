@@ -18,6 +18,7 @@ class API {
         val domain by lazy { DomainAPI() }
         val account by lazy { AccountAPI() }
         val token by lazy { TokenAPI() }
-        val message by lazy { MessageAPI() }
+        val messages by lazy { MessageAPI() }
+        val messageId by lazy { MessageIdAPI() }
     }
 }
